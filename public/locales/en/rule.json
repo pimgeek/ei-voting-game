@@ -1,0 +1,11 @@
+{
+  "page1": {
+    "title": "Rules Understanding",
+    "desc": "Each person can submit multiple issues based on their contribution, and the system will automatically match them after a specified time." ,
+    "play": "Start pairing"
+  },
+  "page2": {
+    "title": "Rules Understanding",
+    "desc": "2 sizes that are similar will be more likely to be paired together and the voter can only vote for the other person."
+  }
+}
