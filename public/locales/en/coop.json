@@ -16,6 +16,7 @@
   },
   "page2": {
     "title": "Next, you will have a round of voting..." ,
+    "title2": "At this time, everyone has one vote, and they can vote for the one with higher value and better time efficiency.",
     "peep1": "you",
     "peep2": "greedy",
     "peep3": "honest",
@@ -32,7 +33,10 @@
     "t2": "size",
     "t3": "ei value",
     "t4": "final coins earned",
-    "tips": "* When the ei value is less than 0.8, the contribution size is automatically halved." ,
-    "prompt": "All votes above are anonymous, and will be confirmed on the chain."
+    "tips1": "* Contribution size is automatically halved when the ei value is less than 0.8." ,
+    "tips2": "* All votes above are anonymous and will be confirmed on the chain." ,
+    "prompt1": "Look! There are times when the offer is higher for SIZE and the final revenue is not necessarily higher;",
+    "prompt2": "And it is precisely those who quote a lower price at the beginning that end up with a higher income instead." ,
+    "continue": "continue"
   }
 }

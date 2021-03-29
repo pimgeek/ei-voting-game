@@ -40,6 +40,9 @@ export default function CooperationTwo() {
                 <div className={styles.page2_title}>
                     {t('page2.title')}
                 </div>
+                <div className={styles.page2_p1}>
+                    {t('page2.title2')}
+                </div>
                 <div className={styles.page2_size1}>size: {size}</div>
                 <div className={styles.page2_size2}>size: 12</div>
                 <div className={styles.page2_size3}>size: 8</div>
@@ -61,10 +64,10 @@ export default function CooperationTwo() {
                     <p style={{paddingTop: 30}}>{t('page2.p3')}</p>
                 </div>
                 <div className={styles.buttons}>
-                    <div className={styles.button} onClick={() => {router.push(`/coop/3?vote=2&size=${size}`)}}>
+                    <div className={styles.button} onClick={() => {router.push(`/coop/3?vote=1&size=${size}`)}}>
                         {t(`page2.peep2`)}
                     </div>
-                    <div className={styles.button} onClick={() => {router.push(`/coop/3?vote=3&size=${size}`)}}>
+                    <div className={styles.button} onClick={() => {router.push(`/coop/3?vote=2&size=${size}`)}}>
                         {t(`page2.peep3`)}
                     </div>
                 </div>

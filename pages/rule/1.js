@@ -67,7 +67,10 @@ export default function RuleUnderstandOne() {
                     {t('page1.title')}
                 </h1>
                 <div className={styles.rule_page1_desc}>
-                    {t('page1.desc')}
+                    <div>{t('page1.p1')}</div>
+                    <div>{t('page1.p2')}</div>
+                    <div>{t('page1.p3')}</div>
+                    <div style={{paddingTop: 20}}>{t('page1.p4')}</div>
                 </div>
                 <div>
                     <Peep />

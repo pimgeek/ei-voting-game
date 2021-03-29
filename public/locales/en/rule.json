@@ -1,11 +1,16 @@
 {
   "page1": {
     "title": "Rules Understanding",
-    "desc": "Each person can submit multiple issues based on their contribution, and the system will automatically match them after a specified time." ,
+    "p1": "Well, we just learned about the mechanics of voting;",
+    "p2": "Next, it is necessary to understand how the issue is paired." ,
+    "p3": "First, everyone can submit multiple issues based on their contribution, and the system will, at the specified time, automate the matching process." ,
+    "p4": "So, the pairing result will be...",
     "play": "Start pairing"
   },
   "page2": {
     "title": "Rules Understanding",
-    "desc": "2 sizes that are similar will be more likely to be paired together and the voter can only vote for the other person."
+    "p1": "Yes, that's right! To be fair, the more similar the SIZE values are the more likely they are to be paired together, and they won't vote for themselves." ,
+    "p2": "So, here's the result of the pairing...",
+    "continue": "continue"
   }
 }

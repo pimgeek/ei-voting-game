@@ -1,7 +1,7 @@
 {
   "page1": {
     "title": "Convergence",
-    "desc": "Here, we now let the composition of contributors evolve over time, dividing this evolutionary process into an \"evolutionary trilogy\":",
+    "desc": "Finally, let's see how the composition of contributors will change as time evolves...",
     "s1": "1. Conduct a poll",
     "s1d": "Every once in a while, conduct a workload poll." ,
     "s2": "2. Eliminate inefficiencies",
@@ -20,6 +20,7 @@
   "page3": {
     "p1": "So, the result is obviously..." ,
     "p2": "... The average person stays behind." ,
-    "p3": "Although in the short term, the greedy ghost will stay in the team for a while, eventually we see that when he is punished, he will become restrained and the team will gradually reach a consensus and become a kind of person."
+    "p3": "Although in the short term, the greedy ghost will stay in the team for a while, eventually we see that when he is punished, he will become restrained and the team will gradually reach a consensus and become a kind of person.",
+    "continue": "continue"
   }
 }
