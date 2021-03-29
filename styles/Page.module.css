@@ -140,14 +140,17 @@
     font-size: 22px;
     font-weight: bold;
     padding-bottom: 10px;
+    position: absolute;
+    top: 81px;
+    left: 10%;
 }
 
 .vote {
     display: flex;
     flex-direction: row;
     width: 100%;
-    padding-top: 70px;
-    padding-left: 30px;
+    top: 15%;
+    position: absolute;
 }
 
 .vote_img {
@@ -161,10 +164,14 @@
 
 .page2_image {
     flex: 600px;
+    position: absolute;
+    left: 20%;
 }
 
 .page2_peep {
     flex: auto;
+    position: absolute;
+    left: 60%;
 }
 
 .page2_peep_info {
@@ -176,6 +183,9 @@
 
 .page2_question {
     width: 100%;
+    position: absolute;
+    bottom: 20%;
+    left: 10%;
 }
 
 .page2_question p {
@@ -191,7 +201,8 @@
     justify-content: space-between;
     width: 500px;
     color: #4A4848;
-    padding-top: 30px;
+    position: absolute;
+    bottom: 10%;
 }
 
 .button {
@@ -202,13 +213,14 @@
     border: 1px solid rgba(74, 72, 72, 100);
     border-radius: 4px;
     cursor: pointer;
+    z-index: 99;
 }
 
 .page2_size1 {
     position: absolute;
     z-index: 99;
     top: 189px;
-    left: 12%;
+    left: 20%;
     font-size: 24px;
     margin-left: 320px;
     color: #5088D7;
@@ -218,7 +230,7 @@
     position: absolute;
     z-index: 99;
     top: 371px;
-    left: 12%;
+    left: 20%;
     font-size: 24px;
     margin-left: 530px;
     color: #52547C;
@@ -228,7 +240,7 @@
     position: absolute;
     z-index: 99;
     top: 371px;
-    left: 12%;
+    left: 20%;
     font-size: 24px;
     margin-left: -70px;
     color: #F6C06F;
