@@ -43,6 +43,8 @@ export default function RuleUnderstandTwo() {
     const { t } = useTranslation('rule')
     const router = useRouter()
     const color = {1: '#5088D7', 2: '#52547C', 3: '#F6C06F'}
+    const [backgroundHover, setBackgroundHover] = useState(false)
+
     let paired = {1: [], 2: [], 3: []}
     if (typeof window !== "undefined") {
         const pair = JSON.parse(window.localStorage.getItem('pair') || '{}')
@@ -70,7 +72,7 @@ export default function RuleUnderstandTwo() {
     </div>))
 
     return (
-        <div className={styles.container} onClick={() => router.push('/conv/1')}>
+        <div className={styles.container}>
             <Head>
                 <title>{t('page2.title')}</title>
             </Head>
@@ -78,11 +80,20 @@ export default function RuleUnderstandTwo() {
                 <h1 className={styles.title}>
                     {t('page2.title')}
                 </h1>
-                <div className={styles.rule_page2_desc}>
-                    {t('page2.desc')}
+                <div className={styles.rule_page1_desc}>
+                    <div>{t('page2.p1')}</div>
+                    <div style={{paddingTop: 30}}>{t('page2.p2')}</div>
                 </div>
                 <div className={styles.rule_page2_content}>
                     <Peep />
+                </div>
+                <div>
+                    <div className={styles.play_button_background} />
+                    <div className={styles.play_button_description}
+                         onClick={() => router.push('/conv/1')}
+                    >
+                        {t('page2.continue')} →
+                    </div>
                 </div>
             </main>
         </div>

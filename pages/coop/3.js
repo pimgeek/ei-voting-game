@@ -4,10 +4,12 @@ import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import Head from 'next/head'
 import styles from '../../styles/Page.module.css'
 import {useRouter} from "next/router";
+import {useState} from "react";
 
 export default function CooperationThree() {
     const { t } = useTranslation('coop')
     const router = useRouter()
+    const [backgroundHover, setBackgroundHover] = useState(false)
     const { vote, size } = router.query
 
     let peep = [
@@ -48,8 +50,8 @@ export default function CooperationThree() {
 
     for (let i = 0; i < pair.length; i++) {
         const p = pair[i]
-        if (p === [1, 2]) {
-            es[p[parseInt(vote)]] += allSize[p[parseInt(vote)]]
+        if (p[0] === 1 && p[1] === 2) {
+            es[parseInt(vote)] += allSize[parseInt(vote)]
             continue
         }
         let v = Math.round(Math.random())
@@ -101,7 +103,7 @@ export default function CooperationThree() {
     </div>
 
     return (
-        <div className={styles.container} onClick={() => router.push('/rule/1')}>
+        <div className={styles.container}>
             <Head>
                 <title>{t('page3.title')}</title>
             </Head>
@@ -110,11 +112,27 @@ export default function CooperationThree() {
                     <div className={styles.page3_title}>{t('page3.title')}</div>
                 </div>
                 {VoteResultTable}
-                <div className={styles.page3_tips}>
-                    {t('page3.tips')}
+                <div className={styles.page3_tips1}>
+                    {t('page3.tips1')}
                 </div>
-                <div className={styles.page3_prompt}>
-                    {t('page3.prompt')}
+                <div className={styles.page3_tips2}>
+                    {t('page3.tips2')}
+                </div>
+                <div className={styles.page3_prompt1}>
+                    {t('page3.prompt1')}
+                </div>
+                <div className={styles.page3_prompt2}>
+                    {t('page3.prompt2')}
+                </div>
+                <div>
+                    <div className={backgroundHover ? styles.play_button_background_hover : styles.play_button_background} />
+                    <div className={styles.play_button_description}
+                         onMouseOver={() => setBackgroundHover(true)}
+                         onMouseLeave={() => setBackgroundHover(false)}
+                         onClick={() => router.push('/rule/1')}
+                    >
+                        {t('page3.continue')} →
+                    </div>
                 </div>
             </main>
         </div>

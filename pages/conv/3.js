@@ -5,13 +5,15 @@ import Head from 'next/head'
 import styles from '../../styles/Page.module.css'
 import {useRouter} from "next/router";
 import Image from 'next/image'
+import {useState} from "react";
 
 export default function ConvergenceThree() {
     const { t } = useTranslation('conv')
     const router = useRouter()
+    const [backgroundHover, setBackgroundHover] = useState(false)
 
     return (
-        <div className={styles.container} onClick={() => router.push('/ending')}>
+        <div className={styles.container}>
             <Head>
                 <title>{t('page2.p1')}</title>
             </Head>
@@ -31,6 +33,17 @@ export default function ConvergenceThree() {
                             <div className={styles.cove_page3_desc} style={{marginTop: 30}}>{t('page3.p2')}</div>
                             <div className={styles.cove_page3_desc} style={{marginTop: 50}}>{t('page3.p3')}</div>
                         </div>
+                    </div>
+
+                </div>
+                <div>
+                    <div className={backgroundHover ? styles.play_button_background_hover : styles.play_button_background} />
+                    <div className={styles.play_button_description}
+                         onMouseOver={() => setBackgroundHover(true)}
+                         onMouseLeave={() => setBackgroundHover(false)}
+                         onClick={() => router.push('/ending')}
+                    >
+                        {t('page3.continue')} →
                     </div>
                 </div>
             </main>
