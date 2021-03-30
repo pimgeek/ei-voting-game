@@ -12,9 +12,9 @@ export default function CooperationTwo() {
     const { size } = router.query
     const Peep = useCallback(() => {
         return [
-            {i: 1, iconSize: {x: 0, y: 0}, color: '#5088D7'},
-            {i: 2, iconSize: {x: -25, y: 0}, color: '#52547C'},
-            {i: 3, iconSize: {x: -100, y: 0}, color: '#F6C06F'},
+            {i: 1, iconSize: {x: 0, y: 0}, color: '#5088D7', size: size},
+            {i: 2, iconSize: {x: -25, y: 0}, color: '#52547C', size: 12},
+            {i: 3, iconSize: {x: -100, y: 0}, color: '#F6C06F', size: 8},
         ].map((p) => <div key={p.i} className={styles.page2_peep_info}>
 
             <div className={styles.dialogue}>
@@ -23,8 +23,8 @@ export default function CooperationTwo() {
                          style={{backgroundPositionX: p.iconSize.x, backgroundPositionY: p.iconSize.y}}
                     />
                 </div>
-                <div className={styles.peep_text} style={{color: p.color}}>
-                    {t(`page2.peep${p.i}`)}
+                <div className={styles.coop_page2_peep_text} style={{color: p.color}}>
+                    {t(`page2.peep${p.i}`)}{` size: ${p.size}`}
                 </div>
             </div>
 
@@ -43,20 +43,23 @@ export default function CooperationTwo() {
                 <div className={styles.page2_p1}>
                     {t('page2.title2')}
                 </div>
-                <div className={styles.page2_size1}>size: {size}</div>
-                <div className={styles.page2_size2}>size: 12</div>
-                <div className={styles.page2_size3}>size: 8</div>
+
                 <div className={styles.vote}>
+                    {/*<div className={styles.page2_size1}>size: {size}</div>*/}
+                    {/*<div className={styles.page2_size2}>size: 12</div>*/}
+                    {/*<div className={styles.page2_size3}>size: 8</div>*/}
                     <div className={styles.page2_image}>
-                        <Image
+                        <img
                             src={`/assets/ui/coop_vote.png`}
                             width={531}
                             height={404}
                         />
+
                     </div>
                     <div className={styles.page2_peep}>
                         <Peep />
                     </div>
+
                 </div>
                 <div className={styles.page2_question}>
                     <p>{t('page2.p1')}</p>
