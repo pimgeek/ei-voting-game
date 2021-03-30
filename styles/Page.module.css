@@ -72,6 +72,15 @@
     padding-top: 48px;
 }
 
+.coop_page2_peep_text {
+    text-align: center;
+    height: 50px;
+    min-width: 80px;
+    padding-left: 5px;
+    font-size: 20px;
+    padding-top: 48px;
+}
+
 .icon {
     background: url(../public/assets/ui/sandbox_hats.png);
     width: 25px;
@@ -138,51 +147,36 @@
     width: 100%;
     text-align: left;
     font-size: 22px;
+    line-height: 63px;
     font-weight: bold;
-    padding-bottom: 10px;
-    position: absolute;
-    top: 81px;
-    left: 10%;
 }
 
 .page2_p1 {
     width: 100%;
     text-align: left;
+    line-height: 63px;
     font-size: 22px;
     font-weight: bold;
-    padding-bottom: 10px;
-    position: absolute;
-    top: 131px;
-    left: 10%;
 }
 
 .vote {
     display: flex;
     flex-direction: row;
     width: 100%;
-    top: 18%;
-    position: absolute;
-}
-
-.vote_img {
-    position: absolute;
-    background: url(../public/assets/ui/coop_vote.png);
-    width: 531px;
-    height: 404px;
-    top: 169px;
-    left: 12%;
+    justify-content: space-evenly;
+    padding-top: 30px;
 }
 
 .page2_image {
-    flex: 600px;
-    position: absolute;
-    left: 20%;
+    /*flex: 600px;*/
+    /*position: absolute;*/
 }
 
 .page2_peep {
-    flex: auto;
-    position: absolute;
-    left: 60%;
+    /*flex: auto;*/
+    /*position: absolute;*/
+    /*top: 0;*/
+    /*left: 580px;*/
 }
 
 .page2_peep_info {
@@ -194,9 +188,7 @@
 
 .page2_question {
     width: 100%;
-    position: absolute;
-    bottom: 20%;
-    left: 10%;
+    padding-top: 40px;
 }
 
 .page2_question p {
@@ -212,8 +204,8 @@
     justify-content: space-between;
     width: 500px;
     color: #4A4848;
-    position: absolute;
-    bottom: 10%;
+    padding-top: 40px;
+    padding-bottom: 50px;
 }
 
 .button {
@@ -228,35 +220,29 @@
 }
 
 .page2_size1 {
+    width: 100%;
     position: absolute;
     z-index: 99;
-    top: 18%;
-    left: 20%;
+    top: 81px;
     font-size: 24px;
-    margin-left: 320px;
-    margin-top: 30px;
     color: #5088D7;
 }
 
 .page2_size2 {
+    width: 100%;
     position: absolute;
     z-index: 99;
-    top: 18%;
-    left: 20%;
+    top: 81px;
     font-size: 24px;
-    margin-left: 530px;
-    margin-top: 200px;
     color: #52547C;
 }
 
 .page2_size3 {
+    width: 100%;
     position: absolute;
     z-index: 99;
-    top: 18%;
-    left: 20%;
+    top: 81px;
     font-size: 24px;
-    margin-left: -70px;
-    margin-top: 200px;
     color: #F6C06F;
 }
 
